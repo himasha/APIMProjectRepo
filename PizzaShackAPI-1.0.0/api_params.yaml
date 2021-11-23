@@ -1,0 +1,29 @@
+environments: 
+    - name: dev 
+        configs:
+            endpoints: 
+                production: 
+                    url: 'https://localhost:9443' 
+                sandbox:
+                    url: 'https://localhost:9443' 
+            deploymentEnvironments:
+                - displayOnDevportal: true
+                  deploymentEnvironment: Default
+                  deploymentVhost : localhost
+                - displayOnDevportal: true
+                  deploymentEnvironment: Label1
+                  deploymentVhost : us.wso2.com 
+    - name: prod
+        configs:
+            endpoints:
+                production:
+                    url: 'https://localhost:9444'
+                sandbox:
+                    url: 'https://localhost:9444'
+            deploymentEnvironments:
+                - displayOnDevportal: true
+                  deploymentEnvironment: Label2
+                  deploymentVhost : localhost
+                - displayOnDevportal: true
+                  deploymentEnvironment: Label3
+                  deploymentVhost : us.wso2.com 
