@@ -6,24 +6,10 @@ environments:
                     url: 'https://localhost:9443' 
                 sandbox:
                     url: 'https://localhost:9443' 
-            deploymentEnvironments:
-                - displayOnDevportal: true
-                  deploymentEnvironment: Default
-                  deploymentVhost : localhost
-                - displayOnDevportal: true
-                  deploymentEnvironment: Label1
-                  deploymentVhost : us.wso2.com 
     - name: prod
         configs:
             endpoints:
                 production:
-                    url: 'https://localhost:9444'
+                    url: 'http://prod.wso2.com:9090/samplestore'
                 sandbox:
-                    url: 'https://localhost:9444'
-            deploymentEnvironments:
-                - displayOnDevportal: true
-                  deploymentEnvironment: Label2
-                  deploymentVhost : localhost
-                - displayOnDevportal: true
-                  deploymentEnvironment: Label3
-                  deploymentVhost : us.wso2.com 
+                    url: 'http://sandbox.wso2.com:9090/samplestore'
